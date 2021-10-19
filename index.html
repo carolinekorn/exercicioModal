@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <script src="script.js" defer></script>
+    <title>Exercício Tati</title>
+
+</head>
+
+<body>
+    <p id="titulo">Formulário de Inscrição de Bandas</p>
+    <form id="meuformulario">
+        <div id="dados">
+            <p><label for="nomeBanda">Nome da Banda:</label>
+                <input type="text" class="dadosForm">
+            </p>
+
+            <p><label for="nome">Nome dos componetes:</label>
+                <input type="text" class="dadosForm">
+            </p>
+
+            <p><label for="e-mail">E-mail:</label>
+                <input type="email" class="dadosForm">
+            </p>
+        </div>
+        <fieldset>
+            <legend>Qual sua Música Preferida?</legend>
+            <label><input type="radio" id="opcao2" name="musicas">Garota de Ipanema - Simone</label>
+            <label><input type="radio" id="opcao3" name="musicas">Boa noite - Luciana Mello</label>
+            <label><input type="radio" id="opcao4" name="musicas">Caso Sério - Ed Motta</label>
+            <label><input type="radio" id="opcao5" name="musicas">Este seu Olha - Toquinho</label>
+            <label><input type="radio" id="opcao1" name="musicas">A Paz - João Bosco</label>
+            <label><input type="radio" id="opcao6" name="musicas">Nenhuma das alternativas disponíveis</label>
+            <img src="imagens/muasica.jpg" id="botao" onclick="chamarJanela()">
+        </fieldset>
+    </form>
+
+    <div id="caixaMaior">
+        <div id="faixaCinza">
+            <p id="cabecalhoCaixa">Aviso</p>
+        </div>
+
+        <p id="mensagemCaixa">Texto da caixa de aviso</p>
+        <button id="botaoOk" onclick="fecharJanela()">Ok</button>
+    </div>
+
+</body>
+
+</html>
